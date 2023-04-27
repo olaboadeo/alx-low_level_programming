@@ -15,14 +15,16 @@ int main(void)
 		{
 			for (c = 0; c < 10; c++)
 			{
-				putchar(a + 48);
-				putchar(b + 48);
-				putchar(c + 48);
-
-				if (a != 7 || b != 8 || c != 9)
+				if ((a < b) && (b < c))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(a + 48);
+					putchar(b + 48);
+					putchar(c + 48);
+					if (a != 7 || b != 8 || c != 9)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
