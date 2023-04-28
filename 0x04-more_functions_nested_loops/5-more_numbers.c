@@ -5,21 +5,24 @@
   */
 void more_numbers(void)
 {
-	int a, b;
+	int a, b, c;
 
-	for (a = 0; a < 2; a++)
+	for (c = 0; c < 10; c++)
 	{
-		for (b = 0; b < 10; b++)
+		for (a = 0; a < 2; a++)
 		{
-			if (a != 1 || !(b >= 5))
+			for (b = 0; b < 10; b++)
 			{
-				if (a == 1)
+				if (a != 1 || !(b >= 5))
 				{
-					_putchar(a + 48);
+					if (a == 1)
+					{
+						_putchar(a + 48);
+					}
+					_putchar(b + 48);
 				}
-				_putchar(b + 48);
 			}
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
