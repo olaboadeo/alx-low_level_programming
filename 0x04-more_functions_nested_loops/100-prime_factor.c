@@ -25,4 +25,4 @@ int main(void)
 
 	printf("%ld\n", larg_factor);
 	return (0);
-}	
+}
