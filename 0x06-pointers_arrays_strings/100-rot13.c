@@ -8,8 +8,8 @@
   */
 char *rot13(char *str)
 {
-	char rot13[] = "ABCDEFGHIJKMLabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
-	char code[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKMLabcdefghijklm";
+	char rot13[] = "ABCDEFGHIJKLMabcdefghijklmNOPQRSTUVWXYZnopqrstuvwxyz";
+	char code[] = "NOPQRSTUVWXYZnopqrstuvwxyzABCDEFGHIJKLMabcdefghijklm";
 	int i, j;
 
 	for (i = 0; str[i] != '\0'; i++)
