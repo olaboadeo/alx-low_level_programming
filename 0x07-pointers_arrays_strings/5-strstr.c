@@ -23,12 +23,17 @@ char *_strstr(char *haystack, char *needle)
 		{
 			if (haystack[i] == needle[j])
 			{
-				for (x = 0; needle[x - 1] == '\0'; x++)
+				for (x = 0; needle[x] != '\0'; x++)
 				{
 					if (haystack[i + x] != needle[x])
 					{
 						break;
 					}
+					
+				}
+
+				if (!needle[x])
+				{
 					return (haystack + i);
 				}
 			}
