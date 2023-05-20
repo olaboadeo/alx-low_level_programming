@@ -6,6 +6,7 @@
 /**
   * malloc_checked -  allocates memory using malloc
   * @b: Value passed in to the function
+  *Return: null
   */
 void *malloc_checked(unsigned int b)
 {
