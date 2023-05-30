@@ -48,7 +48,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		arr[j] = s2[j - l1];
 	}
-
+	arr[l1 + l2 + 1] = NULL;
 	return (arr);
 }
 
