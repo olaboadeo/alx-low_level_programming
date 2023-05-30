@@ -10,20 +10,16 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int j = 1;
 
-	if (argc == 1 || argc == 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 	else
 	{
-		for (i = 1; i < 3; i++)
-		{
-			j *= atoi(argv[i]);
-		}
-		printf("%d\n", j);
+		i = atoi(argv[1]) * atoi(argv[2]);
+		printf("%d\n", i);
 	}
 	return (0);
 }
