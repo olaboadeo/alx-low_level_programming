@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  *wildcmp - compares two strings 
+  *wildcmp - compares two strings
   *@s1: first given string
   *@s2: second given string
   *
