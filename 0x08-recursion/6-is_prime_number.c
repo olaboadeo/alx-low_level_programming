@@ -16,6 +16,14 @@ int is_prime_number(int n)
 	return (checknum(n, 2));
 }
 
+/**
+  *checknum - checks if a given number is a prime number
+  *@x: given number
+  *@y: iterator
+  *
+  *Return: 1 if the given number is a prime number
+  *0 if otherwise
+  */
 int checknum(int x, int y)
 {
 	if (x == y)
