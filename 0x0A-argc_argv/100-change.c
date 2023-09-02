@@ -20,6 +20,12 @@ int main(int argc, char *argv[])
 	}
 
 	change = atoi(argv[1]);
+	if (change < 0)
+	{
+		printf("%d\n", 0);
+		return (1);
+	}
+
 	c25 = change / 25;
 	change %= 25;
 	c10 = change / 10;
