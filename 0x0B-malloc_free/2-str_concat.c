@@ -30,10 +30,10 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 
-	for (i = 0; i < l1; i++)
+	for (i = 0; i <= l1; i++)
 		str[i] = s1[i];
 
-	for (j = 0; j < l1 + l2; j++)
+	for (j = 0; j <= l1 + l2; j++)
 		str[l1 + j] = s2[j];
 
 	str[l1 + l2] = '\0';
