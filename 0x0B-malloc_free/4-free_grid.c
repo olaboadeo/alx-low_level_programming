@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
-  *free_grid - frees a 2d array 
+  *free_grid - frees a 2d array
   *@grid: 2d array to be freed
   *@height: row of array to be freed
   */
