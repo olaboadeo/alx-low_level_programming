@@ -20,6 +20,31 @@ int _strlen(char *s)
 }
 
 /**
+ *_strcpy - copies a string
+ *@dest: destination string
+ *@src: source string
+ *Return: the pointer to dest
+ */
+char *_strcpy(char *dest, char *src)
+{
+	int l = 0;
+	int a;
+	char *p = dest;
+
+	while (src[l] != '\0')
+	{
+		l++;
+	}
+
+	for (a = 0; a <= l; a++)
+	{
+		dest[a] = src[a];
+	}
+
+	return (p);
+}
+
+/**
   *new_dog - creates a new dog
   *@name: name of dog
   *@age: age of dog
@@ -44,10 +69,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	ndog->name = name;
-	ndog->owner = owner;
+	_strcpy(ndog->name, name);
+	_strcpy(ndog->owner, owner);
 	ndog->age = age;
 	return (ndog);
 }
-
-
