@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error\n");
-		exit (98);
+		printf("Error1\n");
+		exit(98);
 	}
 
 	num1 = atoi(argv[1]);
@@ -26,13 +26,13 @@ int main(int argc, char *argv[])
 
 	if ((*op == '/' || *op == '%') && num2 == 0)
 	{
-		printf("Error\n");
-		exit (100);
+		printf("Error2\n");
+		exit(100);
 	}
 
 	if (get_op_func(op) == NULL || op[1] != '\0')
 	{
-		printf("Error\n");
+		printf("Error3\n");
 		exit(99);
 	}
 
